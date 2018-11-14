@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context="icar.a5i4s.com.smartbox.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_left">
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="70dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/icon_logo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/line"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="129dp"
+                android:layout_height="wrap_content"
+                android:text="融通宝智能箱"
+                android:background="#e34a4c"
+                android:textColor="@color/white"
+                android:textSize="16dp"
+                android:gravity="center"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:layout_below="@+id/imageView"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tc1"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:text="客服电话\n400-030-3399"
+                android:id="@+id/services_number"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView" />
+
+        </RelativeLayout>
+
+        <FrameLayout
+            android:id="@+id/console_fragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+        <RelativeLayout
+            android:id="@+id/right_bar"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_right"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_logout"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/logout" />
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_menu_check"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/logout"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/menu"/>
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_put"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/menu"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/put"/>
+
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_change"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/put"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/change"/>
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_lend"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/change"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/lend"/>
+
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_get"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/lend"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/get"/>
+
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_check"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_below="@+id/get"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/check"/>
+        </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

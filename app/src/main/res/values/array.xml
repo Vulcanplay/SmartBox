@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="change">
+        <item>@string/change</item>
+        <item>@string/cancel_change</item>
+    </string-array>
+    <string-array name="lend">
+        <item>@string/lend</item>
+        <item>@string/cancel_lend</item>
+    </string-array>
+</resources>

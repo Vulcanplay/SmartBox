@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:shadow="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    shadow:z_depth="z_depth5"
+    shadow:z_depth_shape="rect"
+    shadow:z_depth_animDuration="150"
+    shadow:z_depth_doAnim="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/main"
+        android:padding="16dp">
+        <TextView
+            android:id="@+id/vin_tx"
+            android:layout_width="180dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:gravity="center|right"
+            android:textSize="20dp"
+            android:text="VIN号："/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:text="123456789"
+            android:textSize="20dp"
+            android:id="@+id/vin_value"
+            android:layout_toEndOf="@+id/vin_tx"
+            android:layout_toRightOf="@+id/vin_tx" />
+
+        <RelativeLayout
+            android:id="@+id/hegezheng"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vin_tx"
+            >
+            <TextView
+                android:id="@+id/hegezheng_tx"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:textColor="@color/pink"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:text="合格证号："/>
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_edittext_normal"
+                android:id="@+id/hegezheng_value"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/hegezheng_tx"
+                android:layout_toEndOf="@+id/hegezheng_tx" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/hegezheng">
+
+            <TextView
+                android:id="@+id/check_result_tx"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:layout_marginTop="3dp"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:text="合格证核查结果："/>
+
+            <RadioGroup
+                android:id="@+id/check_result_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/check_result_tx"
+                android:layout_toEndOf="@+id/check_result_tx">
+                <RadioButton
+                    android:text="一致"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_identical"
+                    android:layout_alignParentTop="true" />
+
+                <RadioButton
+                    android:text="未存"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/radio_nothingness"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/radio_identical"
+                    android:layout_toEndOf="@+id/radio_identical" />
+
+                <RadioButton
+                    android:text="不一致"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_disagree"
+                    android:layout_toRightOf="@+id/radio_nothingness"
+                    android:layout_toEndOf="@+id/radio_nothingness" />
+            </RadioGroup>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/key_count"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/relativeLayout"
+            >
+            <TextView
+                android:id="@+id/key_tx"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:textColor="@color/pink"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:text="应收钥匙数量："/>
+
+            <EditText
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:text=""
+                android:textSize="20dp"
+                android:textColorHint="@color/gray"
+                android:background="@drawable/bg_edittext_normal"
+                android:id="@+id/key_count_value"
+                android:inputType="number"
+                android:layout_alignParentTop="true"
+                android:layout_toRightOf="@+id/key_tx"
+                android:layout_toEndOf="@+id/key_tx" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_marginTop="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/key_count">
+
+            <TextView
+                android:id="@+id/check_key_tx"
+                android:layout_width="180dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/pink"
+                android:layout_marginTop="3dp"
+                android:gravity="center|right"
+                android:textSize="20dp"
+                android:text="合格证核查结果："/>
+
+            <RadioGroup
+                android:id="@+id/check_key_radio_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_toRightOf="@+id/check_key_tx"
+                android:layout_toEndOf="@+id/check_key_tx">
+                <RadioButton
+                    android:text="押齐"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_key_identical"
+                    android:layout_alignParentTop="true" />
+
+                <RadioButton
+                    android:text="未存"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:id="@+id/radio_key_nothingness"
+                    android:layout_marginRight="20dp"
+                    android:textSize="20dp"
+                    android:layout_toRightOf="@+id/radio_key_identical"
+                    android:layout_toEndOf="@+id/radio_key_identical" />
+
+                <RadioButton
+                    android:text="未押齐"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="20dp"
+                    android:id="@+id/radio_key_disagree"
+                    android:layout_toRightOf="@+id/radio_key_nothingness"
+                    android:layout_toEndOf="@+id/radio_key_nothingness" />
+            </RadioGroup>
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/remarks_tx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/pink"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"
+            android:text="核查结果备注："
+            android:layout_below="@+id/relativeLayout1"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <Button
+            android:id="@+id/grid_submit_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:background="@drawable/button_eb_ctrl"
+            android:enabled="false"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:layout_marginTop="25dp"
+            android:layout_below="@+id/remarks_value"
+            android:layout_alignLeft="@+id/remarks_value"
+            android:layout_alignStart="@+id/remarks_value"
+            android:layout_alignRight="@+id/remarks_value"
+            android:layout_alignEnd="@+id/remarks_value" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:inputType="text"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/gray"
+            android:background="@drawable/bg_edittext_normal"
+            android:gravity="top"
+            android:id="@+id/remarks_value"
+            android:layout_below="@+id/remarks_tx"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+    </RelativeLayout>
+</LinearLayout>

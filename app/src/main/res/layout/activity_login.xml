@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main"
+    tools:context="icar.a5i4s.com.smartbox.LoginActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+        <RelativeLayout
+            android:layout_width="140dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_left">
+            <ImageView
+                android:layout_width="129dp"
+                android:layout_height="70dp"
+                android:paddingLeft="2dp"
+                android:paddingRight="2dp"
+                android:src="@drawable/icon_logo"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/line"
+                android:id="@+id/imageView" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/tc1"
+                android:textSize="10dp"
+                android:gravity="center"
+                android:text="客服电话\n400-030-3399"
+                android:id="@+id/services_number"
+                android:paddingBottom="15dp"
+                android:paddingTop="15dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignRight="@+id/imageView"
+                android:layout_alignEnd="@+id/imageView" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="融通宝智能箱"
+                    android:textSize="23dp"
+                    android:textColor="@color/white"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="70dp"
+                    android:id="@+id/textView" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_below="@+id/textView"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+                    <EditText
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edittext_normal"
+                        android:hint="账号"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/gray"
+                        android:layout_alignParentTop="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="40dp"
+                        android:id="@+id/account" />
+                    <EditText
+                        android:layout_width="270dp"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_edittext_normal"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="20dp"
+                        android:hint="密码"
+                        android:paddingLeft="15dp"
+                        android:paddingRight="15dp"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp"
+                        android:textColorHint="@color/gray"
+                        android:textColor="@color/gray"
+                        android:layout_below="@+id/account"
+                        android:layout_centerHorizontal="true"
+                        android:id="@+id/password" />
+
+                    <!--<LinearLayout-->
+                        <!--android:layout_width="270dp"-->
+                        <!--android:layout_height="wrap_content"-->
+                        <!--android:orientation="horizontal"-->
+                        <!--android:layout_below="@+id/password"-->
+                        <!--android:layout_marginTop="15dp"-->
+                        <!--android:layout_marginBottom="10dp"-->
+                        <!--android:layout_centerHorizontal="true"-->
+                        <!--android:id="@+id/linearLayout">-->
+                        <!--<LinearLayout-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="wrap_content"-->
+                            <!--android:layout_weight="1">-->
+                            <!--<ImageView-->
+                                <!--android:id="@+id/checkBox"-->
+                                <!--android:layout_width="25dp"-->
+                                <!--android:layout_height="23dp" />-->
+                            <!--<TextView-->
+                                <!--android:layout_width="wrap_content"-->
+                                <!--android:layout_height="23dp"-->
+                                <!--android:textColor="@color/gray1"-->
+                                <!--android:gravity="center_vertical"-->
+                                <!--android:text="记住我"/>-->
+                        <!--</LinearLayout>-->
+                        <!--<TextView-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="23dp"-->
+                            <!--android:layout_weight="1"-->
+                            <!--android:gravity="center_vertical|right"-->
+                            <!--android:text="忘记密码？"-->
+                            <!--android:textColor="@color/gray1"-->
+                            <!--android:layout_below="@+id/password"-->
+                            <!--android:layout_alignLeft="@+id/password"-->
+                            <!--android:layout_alignStart="@+id/password" />-->
+
+                    <!--</LinearLayout>-->
+
+                    <Button
+                        android:id="@+id/login_button"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:background="#e34a4c"
+                        android:text="登录"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="25dp"
+                        android:layout_below="@+id/password"
+                        android:layout_alignLeft="@+id/password"
+                        android:layout_alignStart="@+id/password"
+                        android:layout_alignRight="@+id/password"
+                        android:layout_alignEnd="@+id/password" />
+                </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_right"
+            android:orientation="vertical">
+            <ImageView
+                android:layout_width="84.5dp"
+                android:layout_height="70dp"
+                android:src="@drawable/icon_login"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/line"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
